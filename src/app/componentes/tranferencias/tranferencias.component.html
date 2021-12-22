@@ -1,0 +1,26 @@
+<h1>Minhas LISTA DE Tranferencias</h1>
+<div>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Id Tranferencia</th>
+        <th scope="col">Nome do Cliente</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Conta</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of ListaDeDepositos">
+        <th>{{item.id_tranferencias}}</th>
+        <td>{{item.nomeCliente}}</td>
+        <td>{{item.valor|currency:"BRL"}}</td>
+        <td>{{item.conta}}</td>
+        <td>
+          <button  type="button" class="btn btn-primary me-md-2" (click)="editar(item.id_tranferencias)" >Editar</button>
+          <button type="button" class="btn btn-danger me-md-2" (click)="excluir(item.id_tranferencias)">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

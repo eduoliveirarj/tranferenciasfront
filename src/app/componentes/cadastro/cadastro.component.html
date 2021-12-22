@@ -1,0 +1,20 @@
+<div class="container">
+  <form action="">
+    <div>
+      <label for="" class="form-label">Nome do Cliente</label>
+      <input [(ngModel)]="deposito.nomeCliente" type="text" class="form-control">
+    </div>
+    <div>
+      <label for="" class="form-label">Valor Tranferencia</label>
+      <input [(ngModel)]="deposito.valor" type="text" class="form-control">
+    </div>
+    <div>
+      <label for="" class="form-label">Numero da Conta</label>
+      <input [(ngModel)]="deposito.conta" type="text" class="form-control">
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary" (click)="novoDeposito()">Enviar</button>
+      <button type="reset" class="btn btn-danger">Limpar</button>
+    </div>
+  </form>
+</div>
